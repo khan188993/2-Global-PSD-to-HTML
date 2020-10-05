@@ -47,6 +47,10 @@ body {
     margin: 0 -15px;
 }
 
+.col-1 {
+    width: 8.33%;
+    padding: 0 15px;
+}
 .col-2 {
     width: 16.66%;
     padding: 0 15px;
@@ -61,6 +65,10 @@ body {
     width: 33.33%;
     padding: 0 15px;
 }
+.col-5 {
+    width: 41.66%;
+    padding: 0 15px;
+}
 
 .col-6 {
     width: 50%;
@@ -71,9 +79,21 @@ body {
     width: 58.33%;
     padding: 0 15px;
 }
+.col-8 {
+    width: 66.66%;
+    padding: 0 15px;
+}
 
 .col-9 {
     width: 75%;
+    padding: 0 15px;
+}
+.col-10 {
+    width: 83.33%;
+    padding: 0 15px;
+}
+.col-11 {
+    width: 91.66%;
     padding: 0 15px;
 }
 
@@ -154,6 +174,12 @@ p {
 
 .btn-white {
     background: var(--white);
+    transition: .3s;
+}
+
+.btn-white:hover {
+	background: var(--orange);
+	color: var(--white);
 }
 
 .btn-orange {
@@ -167,8 +193,10 @@ p {
 
 /* ========= Header Part Start ===========  */
 #header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("background.jpg");
-    min-height: 812px;
+     background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url(../images/background.jpg);
+     background-attachment: fixed;
+     background-size: cover;
+     min-height: 812px;
 }
 
 .header {
@@ -194,6 +222,10 @@ p {
     font-size: 16px;
     font-weight: 700;
     color: var(--white);
+    transition: .3s;
+}
+.nav-menu ul li a:hover {
+    color: var(--orange);
 }
 
 .hero-text div.text {
@@ -207,7 +239,7 @@ p {
     font-weight: 700;
 }
 
-.btn.btn-gradient {
+.btn-gradient {
     display: inline-block;
     background-image: linear-gradient(to left,var(--orange),var(--deep-orange));
     color: var(--white);
@@ -376,6 +408,70 @@ p {
 }
 
 /* ========= Publishers Part Start ===========  */
+section#publishers{
+    background:url(../images/publisher-bg.png);
+    padding: 100px 0 50px 0;
+}
+
+.publishers {
+    color: var(--white);
+    text-align: center;
+  }
+  .publishers h1 {
+    color: var(--white);
+  }
+
+  .publishers p {
+	padding: 0px 202px;
+	line-height: 33px;
+	margin-bottom: 124px;
+}
+
+.publishers i{
+    font-size: 60px;
+}
+  
 /* ========= Fact about us Part Start ===========  */
+
+.fact-about p{
+    padding: 0px 202px;
+	line-height: 33px;
+}
+
+
+.single-fact-card {
+    text-align: center;
+    border-bottom: 4px solid transparent;
+    transition:.3s;
+  }
+  
+  
+  .single-fact-card:hover {
+    border-bottom: 4px solid var(--orange);
+  }
+  .single-fact-card h2 {
+    font-size: 18px;
+    margin-top: 35px;
+    line-height: 30px;
+   
+  }
+  
+
+
 /* ========= Google Map Part Start ===========  */
 /* ========= Footer part Start ===========  */
+
+#footer p{
+    padding: 0px 241px;
+	line-height: 33px;
+}
+
+
+.social-icons {
+    text-align: center;
+    color: var(--p-color);
+  }
+  .social-icons a {
+    margin: 16px 15px 0;
+    display: inline-block;
+  }
