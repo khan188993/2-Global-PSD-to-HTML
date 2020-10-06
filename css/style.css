@@ -26,7 +26,7 @@ html {
 
 body {
     font-family: var(--roboto);
-    overflow-x: hidden;
+    overflow:hidden;
 
 }
 
