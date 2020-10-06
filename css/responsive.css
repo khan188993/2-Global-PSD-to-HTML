@@ -306,6 +306,10 @@
         display: none;
     }
 
+    .sectionHeading h1 {
+        font-size: 35px;
+    }
+
     .hamberger{
         display:block;
     }
@@ -332,6 +336,10 @@
 
     .all-services {
         margin-top: 0px;
+    }
+
+    .btn.btn-orange {
+        padding: 17px 20px;
     }
 
     .single-services {
