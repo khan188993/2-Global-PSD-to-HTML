@@ -323,7 +323,8 @@
                                 for a local hotel or a feature-heavy portal that belongs to big holiday company, it
                                 fantastic interfaces are user magnets</p>
                             <div class="play">
-                                <a class="video-popup" href="./images/background.jpg"><i class="far fa-play-circle"></i></a>
+                                <a class="video-popup" href="./images/background.jpg"><i
+                                        class="far fa-play-circle"></i></a>
                             </div>
                         </div>
                     </div>
@@ -389,6 +390,21 @@
         </div>
     </section>
 
+    <!-- /* ========= Google Map Part Start ===========  */ -->
+    <section id="google-map">
+        <div class="google-map">
+            <div id="map"></div>
+            <div class="contact-text">
+                <span>Phone:</span>
+                <h1>+38 (098) 483 61 77</h1>
+                <span>Email:</span>
+                <h1>info@globalmedia.com</h1>
+                <span>Skype:</span>
+                <h1>globalmedia</h1>
+            </div>
+        </div>
+    </section>
+
     <!-- /* ========= Footer Part Start ===========  */ -->
 
     <footer id="footer">
@@ -416,6 +432,30 @@
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/jquery.magnific-popup.min.js"></script>
     <script src="./js/jquery.meanmenu.min.js"></script>
+    <!-- Google Map js -->
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: -25.344, lng: 131.036};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 4, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+            </script>
+            <!--Load the API from the specified URL
+            * The async attribute allows the browser to render the page while the API loads
+            * The key parameter will contain your own API key (which is not needed for this tutorial)
+            * The callback parameter executes the initMap() function
+            -->
+            <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj8BKSnNw92pmAMN6NdGChYU6lvv5ZHfA&callback=initMap">
+            </script>
+       <!-- Google Map js End -->  
+
+
     <script src="./js/main.js"></script>
 </body>
 
