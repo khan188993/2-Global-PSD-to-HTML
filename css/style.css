@@ -306,6 +306,10 @@ p {
 
 }
 
+.hamberger{
+    display:none;
+}
+
 
 
 
@@ -496,6 +500,7 @@ section#publishers {
 .fact-about p {
     padding: 0px 202px;
     line-height: 33px;
+    margin-bottom: 100px;
 }
 
 
