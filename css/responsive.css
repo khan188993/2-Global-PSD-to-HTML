@@ -367,6 +367,10 @@
         justify-content: center;
     }
 
+    .iphone img {
+        width: 100%;
+    }
+
     .advertisers-img a{
         margin-right: 10px;
     }
